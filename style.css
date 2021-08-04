@@ -1,0 +1,524 @@
+:root{
+    --black: #2b2a2c;
+    --gray: #6a696b;
+    --gray-light: #dedede;
+    --white: #fff;
+}
+
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    width: 200px;
+    font-size: 1rem;
+    text-align: center;
+    padding: .9rem 1.5rem;
+    color: var(--gray);
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid var(--gray);
+    border-radius: 2rem;
+    background: none;
+    opacity: 0.8;
+}
+
+.btn:hover{
+    background: var(--gray);
+    color: #fff;
+}
+
+.text_center{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 23px;
+}
+
+/*======== Header ========*/
+
+.header{
+    padding: 1.2rem;
+}
+
+/* display: flex;
+justify-content: center;  (beruma kontent@ mejtex)
+justify-content: flex-end (tanuma content@ verj)
+justify-content: space-around ( content@ cayreric beruma mejtex)
+justify-content: space-between (content@ kpcnum e cayrerin) */
+
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user{
+    display: flex;
+}
+
+.user img{
+    border-radius: 50%;
+}
+
+.user_content{
+    padding-left: 10px;
+}
+
+.user_name{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 8px;
+}
+
+.user_prof{
+    font-size: 12px;
+    color: var(--black);
+    opacity: 0.7;
+}
+
+.nav_link{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--black);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 53px;
+}
+
+.nav_link:hover{
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+}
+
+
+/*======== intro ========*/
+
+.intro_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 12px;
+}
+
+.intro_subtitle{
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.intro_title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.intro_text{
+    font-size: 1.2rem;
+    color: var(--gray);
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.social{
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.social_link{
+    margin-right: 11px;
+}
+
+.social_link:hover{
+    transform: rotateX(20deg);
+}
+
+/*======== Works ========*/
+
+.works_inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.work:hover{
+    box-shadow: 0px 0px 25px black;
+    transition: 0.5s;
+}
+
+.work_content{
+    padding: 1rem 0.8rem;
+}
+
+.work_cat{
+    font-size: 12px;
+    color: var(--black);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.work_title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*======== About========*/
+
+.about_inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7rem;
+}
+
+.about_photo{
+    padding-left: 3.5rem;
+}
+
+.about_content{
+    margin-top: 5rem;
+    padding-left: 7.5rem;
+    max-width: 48%;
+}
+
+.about_title{
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.about_bigtitle{
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--gray-light);
+    text-transform: uppercase;
+}
+
+.about_text{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 3.5rem;
+    line-height: 1.5rem;
+}
+
+/*======== Review ========*/
+
+.review{
+    background: #332f30 url("../images/reviews.png") center no-repeat;
+    background-size: cover;
+    /*
+    background-color: #332f30;
+    background-image: url("../images/reviews.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    */
+
+    padding: 4rem 0;
+    margin-top: 7rem;
+    position: relative;
+}
+
+.review_inner{
+    width: 100%;
+    max-width: 810px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.review_text{
+    font-size: 14px;
+    font-weight: 100;
+    color: var(--white);
+    line-height: 1.5rem;
+}
+
+.review_author{
+    position: absolute;
+    left: calc(50% - 60px);
+}
+
+.reviews_company{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-top: 12px;
+}
+
+.reviews_name{
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--black);
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.reviews_star_unactive{
+    opacity: 0.3;
+}
+
+/*======== Courses ========*/
+
+.courses h3{
+    margin-top: 15rem;
+}
+
+.courses_subtitle{
+    font-size: 18px;
+    font-weight: 100;
+    color: var(--gray);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 60px;
+}
+
+.courses_inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course{
+    width: 33.33%;
+    padding: 0 1rem;
+}
+
+.course_name{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--black);
+    text-transform: uppercase;
+    margin-top: 1.3rem;
+}
+
+.course_cat{
+    margin-top: .8rem;
+    font-size: 12px;
+    color: var(--gray);
+}
+
+.course_text{
+    font-size: 12px;
+    color: var(--gray);
+    font-weight: 300;
+    margin-top: 28px;
+    line-height: 25px;
+}
+
+.course .btn{
+    width: 130px;
+    height: 38px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.link{
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.link a{
+    text-decoration: underline;
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.course:hover{
+    box-shadow: 0 0 10px #333;
+}
+
+
+/*======== Footer ========*/
+
+footer{
+    margin-top: 8rem;
+    background-color: #2b2a2c;
+    padding: 1rem 0;
+}
+
+.footer_inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_info{
+    display: flex;
+    align-items: center;
+}
+
+.footer_copyright{
+    font-size: 14px;
+    color: #8d8d8e;
+    border-right: 1px solid #8d8d8e;
+    padding-right: 20px;
+    margin-right: 1rem;
+}
+
+.footer_social{
+    display: flex;
+}
+
+.footer_social a{
+    margin-right: 1rem;
+    color: #8d8d8e;
+}
+
+
+.footer_nav a{
+    margin-left: 1rem;
+    color: #8d8d8e;
+    font-size: 14px;
+}
+
+
+@media(max-width: 1190px){
+    .intro{
+        padding: 0 2%;
+    }
+
+    .intro_inner{
+        flex-wrap: wrap-reverse;
+    }
+
+    .intro_photo{
+        width: 100%;
+    }
+
+    .work{
+        width: 98%;
+        margin: 1rem auto;
+    }
+
+    .work img{
+        width: 100%;
+    }
+
+    .work_cat{
+        font-size: 1.2rem;
+    }
+
+    .work_title{
+        font-size: 1.5rem;
+    }
+
+    .course{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .course img{
+        width: 100%;
+    }
+
+    .course_name{
+        font-size: 2rem;
+    }
+
+    .course_cat{
+        font-size: 1rem;
+    }
+
+    .course_text{
+        font-size: 0.9rem;
+    }
+    .course .btn{
+        margin-bottom: 10px;
+    }
+
+    footer{
+        padding: 2%;
+    }
+
+    .homeImg {
+        position: fixed;
+        right: 20px;
+        bottom: 120px;
+        z-index: 10;
+    }
+    .homeImg:hover{
+        cursor: pointer;
+    }
+}
+
+
+@media(max-width: 767px){
+    .user{
+        display: none;
+    }
+
+    .about_content{
+        margin-top: 1rem;
+        padding-left: 2rem;
+    }
+
+    .about_title{
+        font-size: 2rem;
+    }
+
+    .about_bigtitle{
+        font-size: 3rem;
+    }
+
+    .about_text{
+        font-size: 14px;
+    }
+
+    footer{
+        margin-top: 1rem;
+    }
+
+    .footer_nav{
+        display: none;
+    }
+
+    .homeImg {
+        position: fixed;
+        right: 10px;
+        top: 770px;
+        z-index: 10;
+    }
+    .homeImg:hover{
+        cursor: pointer;
+    }
+}
+
+.homeImg {
+    position: fixed;
+    right: 10px;
+    bottom: 70px;
+    z-index: 10;
+}
+.homeImg:hover{
+    cursor: pointer;
+}
